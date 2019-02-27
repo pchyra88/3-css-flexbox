@@ -1,0 +1,73 @@
+ #caly_blok {
+    font-size:25px;
+    min-width:480px;
+    max-width:1600px; 
+    color: #ffffff;
+    font-size: 2em;
+    margin: auto;
+  }
+
+  #naglowek {
+    background-color: red;
+    text-align:center;
+    line-height:1,5em; 
+  }
+
+  #lewy {
+    background-color: green;
+    float:left;
+    width:25%;
+    line-height:6em;
+  }
+
+  #lewy p {
+    border-left:none;
+    margin:auto;
+    padding:15px; 
+   
+  }
+
+  #srodek {
+    background-color: blue;
+    float:left; 
+    width:50%;
+    line-height:1.5em;
+  }
+
+  #srodek p {
+    margin: auto;
+    padding:15px;
+  }
+
+  #prawy {
+    background-color: pink;
+    float:left;
+    width:25%;
+    line-height:6em;
+  }
+
+  #prawy p {
+    border-right:none;
+     margin:auto;
+    padding:15px; 
+  }
+
+  #stopka {
+    clear:both;
+    background-color: violet;
+    text-align:center;
+    line-height:1.5em;
+  }
+
+
+
+
+  @media  (max-width:768px) {
+    #lewy, #srodek, #prawy {
+      float:none;
+      width:auto;
+      margin:auto;
+    }
+  } 
+
+  
