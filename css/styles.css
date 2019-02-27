@@ -1,4 +1,8 @@
- #caly_blok {
+* {
+  box-sizing: border-box;
+}
+
+#caly_blok {
     font-size:25px;
     min-width:480px;
     max-width:1600px; 
