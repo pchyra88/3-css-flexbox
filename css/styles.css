@@ -1,77 +1,69 @@
 * {
-  box-sizing: border-box;
-}
-
-#caly_blok {
-    font-size:25px;
-    min-width:480px;
-    max-width:1600px; 
-    color: #ffffff;
-    font-size: 2em;
-    margin: auto;
+    box-sizing: border-box;
   }
 
-  #naglowek {
-    background-color: red;
-    text-align:center;
-    line-height:1,5em; 
+  .container {
+    max-width:100%;
+    height: auto;
+    width: auto;
+    margin: auto; 
   }
 
-  #lewy {
-    background-color: green;
-    float:left;
-    width:25%;
-    line-height:6em;
+  body {
+    padding: 4em; 
   }
 
-  #lewy p {
-    border-left:none;
-    margin:auto;
-    padding:15px; 
-   
+  .wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .wrapper > * {
+    padding: 20px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    background: tomato;
+  }
+  
+  .footer {
+    background: lightgreen;
+  }
+  
+  .main {
+    padding:70px;
+    text-align: left;
+    background: deepskyblue;
+  }
+  
+  .aside-1 {
+    padding:70px;
+    background: gold;
+  }
+  
+  .aside-2 {
+    padding: 70px;
+    background: hotpink;
   }
 
-  #srodek {
-    background-color: blue;
-    float:left; 
-    width:50%;
-    line-height:1.5em;
-  }
-
-  #srodek p {
-    margin: auto;
-    padding:15px;
-  }
-
-  #prawy {
-    background-color: pink;
-    float:left;
-    width:25%;
-    line-height:6em;
-  }
-
-  #prawy p {
-    border-right:none;
-     margin:auto;
-    padding:15px; 
-  }
-
-  #stopka {
-    clear:both;
-    background-color: violet;
-    text-align:center;
-    line-height:1.5em;
-  }
-
-
-
-
-  @media  (max-width:768px) {
-    #lewy, #srodek, #prawy {
-      float:none;
-      width:auto;
-      margin:auto;
+  @media all and (max-width: 992px) {
+    .container {
+      width: 100%;
     }
-  } 
-
+  }
+  
+  @media all and (min-width: 768px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 992px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
   
